@@ -1,0 +1,36 @@
+<div class="row">
+    <div class=" col-12 col-sm-8"  >
+
+        <% const current = parseInt(req.query.page)|| 1; %>
+        <div class="input-group mb-3">
+
+            <div class = "col-12 mx-sm-4">
+        <form action = "/member/view" method="GET">
+            <div class="form-group">
+                    <label>Programme Code:</label>
+                    <input type="text" class="form-control" name="code" value="<%= req.query.code %>">
+                </div>
+
+            <div class="form-group">
+                     <label>Interested University:</label>
+                     <select class="form-control" name="school">
+
+                       <option value="">Please select the university:</option>
+                       <option value="HKBU">Hong Kong Baptist University</option>
+                       <option value="CityU">City University of Hong Kong</option>
+                       <option value="HKU">Hong Kong University</option>
+                       <option value="CUHK">The Chinese University of Hong Kong</option>
+                       <option value="PolyU">The Hong Kong Polytechnic University</option>
+                       <option value="HKUST">The Hong Kong University of Science and Technology</option>
+                       <option value="LingU">Lingnan University</option>
+                       <option value="EduU">The Education University of Hong Kong</option>
+                       <option value="OUHK">The Open University of Hong Kong</option>
+                        </select>
+                    </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </div>
+</div>
+    </div>
+    </div>  

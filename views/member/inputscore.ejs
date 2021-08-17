@@ -1,0 +1,415 @@
+<form action="/member/calc" method="POST">
+
+        <div class="container">
+            <div class="page-caption">
+                <div class="topnav">
+      
+       <div style="position: relative;"> 
+            <h1><p style = color:#e60808>JUPAS Calculator</h1></p>
+
+        <hr><h3>In this page, you can get the score result and further information about different universities and programmes.</h3></hr>
+
+            <div style="position: absolute; right: 0; top: 7px; ">
+            </div>
+       </div> 
+     </div> 
+
+        <div class="subtitle"><h5>Please click the score button to calculate your result!!!</div></h5>
+    </div>
+  
+    <div class="subject-table">
+        <table>
+            <thead>
+                <tr>
+                    <th class="subject-name"></th>
+                    <th class="score score-1" style="width: 120px; text-align: center">1</th>
+                    <th class="score score-2" style="width: 120px; text-align: center">2</th>
+                    <th class="score score-3" style="width: 120px; text-align: center">3</th>
+                    <th class="score score-4" style="width: 120px; text-align: center">4</th>
+                    <th class="score score-5" style="width: 120px; text-align: center">5</th>
+                    <th class="score score-6" style="width: 120px; text-align: center">5*</th>
+                    <th class="score score-7" style="width: 120px; text-align: center">5**</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="core selected" style="background-color:rgb(163, 255, 176);" data-subject-id="1" data-category="A"
+                    data-type-id="1" data-score="7">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Chinese Language 中國語文</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(163, 255, 176); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num1" ng-model="form.field1" onclick="calcSum(this)" value="1" class='unique' required></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num1" ng-model="form.field2" onclick="calcSum(this)" value="2" class='unique' required></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num1" ng-model="form.field3" onclick="calcSum(this)" value="3" class='unique' required></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num1" ng-model="form-field4" onclick="calcSum(this)" value="4" class='unique' required></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num1" ng-model="form-field5" onclick="calcSum(this)" value="5" class='unique' required></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num1" ng-model="form-field6" onclick="calcSum(this)" value="6" class='unique' required></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(163, 255, 176); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num1" ng-model="form-field7" onclick="calcSum(this)" value="7" class='unique' required></td>
+                </tr>
+
+                <tr class="core selected" style="background-color:rgb(163, 255, 176);" data-subject-id="2" data-category="A"
+                    data-type-id="1" data-score="7">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center" required>
+                        <div>English Language 英國語文</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(163, 255, 176); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num2" ng-model="form.field1" onclick="calcSum(this)" value="1" required></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num2" ng-model="form.field2" onclick="calcSum(this)" value="2" required></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num2" ng-model="form.field3" onclick="calcSum(this)" value="3" required></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num2" ng-model="form-field4" onclick="calcSum(this)" value="4" required></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num2" ng-model="form-field5" onclick="calcSum(this)" value="5" required></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num2" ng-model="form-field6" onclick="calcSum(this)" value="6" required></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(163, 255, 176); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num2" ng-model="form-field7" onclick="calcSum(this)" value="7" required></td>
+                </tr>
+
+                <tr class="core selected" style="background-color:rgb(163, 255, 176);" data-subject-id="3" data-category="A"
+                    data-type-id="1" data-score="7">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div> Mathematics 數學</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(163, 255, 176); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num3" ng-model="form.field1" onclick="calcSum(this)" value="1" required></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num3" ng-model="form.field2" onclick="calcSum(this)" value="2" required></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num3" ng-model="form.field3" onclick="calcSum(this)" value="3" required></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num3" ng-model="form-field4" onclick="calcSum(this)" value="4" required></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num3" ng-model="form-field5" onclick="calcSum(this)" value="5" required></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num3" ng-model="form-field6" onclick="calcSum(this)" value="6" required></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(163, 255, 176); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num3" ng-model="form-field7" onclick="calcSum(this)" value="7" required></td>
+                </tr>
+
+                <tr class="core selected" style="background-color:rgb(163, 255, 176);" data-subject-id="4" data-category="A"
+                    data-type-id="1" data-score="7">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Liberal Studies 通識教育</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(163, 255, 176); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num4" ng-model="form.field1" onclick="calcSum(this)" value="1" required></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num4" ng-model="form.field2" onclick="calcSum(this)" value="2" required></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num4" ng-model="form.field3" onclick="calcSum(this)" value="3" required></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num4" ng-model="form-field4" onclick="calcSum(this)" value="4" required></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num4" ng-model="form-field5" onclick="calcSum(this)" value="5" required></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(163, 255, 176); text-align: center"> <input type="radio" name="num4" ng-model="form-field6" onclick="calcSum(this)" value="6" required></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(163, 255, 176); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num4" ng-model="form-field7" onclick="calcSum(this)" value="7" required></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(124, 231, 250);" data-subject-id="5" data-category="A"
+                    data-type-id="2" data-score="0" >
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>M1 微積分與統計</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(124, 231, 250); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num5" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num5" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num5" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num5" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num5" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num5" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(124, 231, 250); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num5" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(124, 231, 250);" data-subject-id="6" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>M2 代數與微積分</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color:rgb(124, 231, 250); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num6" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num6" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num6" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num6" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num6" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color:rgb(124, 231, 250); text-align: center"> <input type="radio" name="num6" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color:rgb(124, 231, 250); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num6" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(247, 169, 169);" data-subject-id="7" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Chinese Literature 中國文學</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(247, 169, 169); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num7" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num7" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num7" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num7" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num7" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num7" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(247, 169, 169); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num7" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(247, 169, 169);" data-subject-id="8" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>English Literature 英語文學</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(247, 169, 169); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num8" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num8" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num8" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num8" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num8" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num8" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(247, 169, 169); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num8" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(247, 169, 169);" data-subject-id="9" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Chinese History 中國歷史</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(247, 169, 169); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num9" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num9" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num9" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num9" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num9" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num9" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(247, 169, 169); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num9" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(247, 169, 169);" data-subject-id="10" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>History 歷史</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(247, 169, 169); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num10" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num10" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num10" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num10" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num10" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num10" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(247, 169, 169); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num10" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(247, 169, 169);" data-subject-id="11" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Religious 倫理與宗教</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(247, 169, 169); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num11" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num11" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num11" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num11" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num11" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(247, 169, 169); text-align: center"> <input type="radio" name="num11" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(247, 169, 169); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num11" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(237, 255, 154);" data-subject-id="12" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Geography 地理</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(237, 255, 154); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num12" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num12" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num12" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num12" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num12" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num12" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(237, 255, 154); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num12" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(237, 255, 154);" data-subject-id="13" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Economics 經濟</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(237, 255, 154); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num13" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num13" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num13" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num13" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num13" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num13" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(237, 255, 154); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num13" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(237, 255, 154);" data-subject-id="14" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center; width: 8cm">
+                        <div>BAFs 企業、會計與財務概論</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(237, 255, 154); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num14" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num14" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num14" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num14" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num14" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(237, 255, 154); text-align: center"> <input type="radio" name="num14" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(237, 255, 154); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num14" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(248, 205, 141);" data-subject-id="15" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Biology 生物</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(248, 205, 141); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num15" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num15" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num15" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num15" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num15" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num15" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(248, 205, 141); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num15" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(248, 205, 141);" data-subject-id="16" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Chemistry 化學</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(248, 205, 141); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num16" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num16" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num16" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num16" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num16" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num16" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(248, 205, 141); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num16" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(248, 205, 141);" data-subject-id="17" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Physics 物理</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(248, 205, 141); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num17" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num17" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num17" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num17" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num17" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num17" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(248, 205, 141); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num17" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(248, 205, 141);" data-subject-id="18" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Combined Science 綜合科學</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(248, 205, 141); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num18" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num18" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num18" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num18" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num18" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(248, 205, 141); text-align: center"> <input type="radio" name="num18" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(248, 205, 141); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num18" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(212, 167, 241);" data-subject-id="19" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Music 音樂</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(212, 167, 241); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num19" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num19" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num19" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num19" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num19" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num19" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(212, 167, 241); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num19" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(212, 167, 241);" data-subject-id="20" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>ICT 資訊及通訊科技</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(212, 167, 241); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num20" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num20" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num20" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num20" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num20" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num20" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(212, 167, 241); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num20" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(212, 167, 241);" data-subject-id="21" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Physical Education 體育</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(212, 167, 241); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num21" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num21" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num21" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num21" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num21" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num21" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(212, 167, 241); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num21" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(212, 167, 241);" data-subject-id="22" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Visual Arts 視覺藝術</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(212, 167, 241); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num22" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num22" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num22" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num22" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num22" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num22" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(212, 167, 241); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num22" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+
+                <tr class="core " style="background-color:rgb(212, 167, 241);" data-subject-id="23" data-category="A"
+                    data-type-id="2" data-score="0">
+                    <td class="subject-name" style="border-radius: 30px; text-align: center">
+                        <div>Tourism and Hospitality 旅遊與款待</div>
+                    </td>
+                    <td class="score-button" data-score="1" style="background-color: rgb(212, 167, 241); text-align: center; border-top-left-radius: 30px; border-bottom-left-radius: 30px"> <input type="radio" name="num23" ng-model="form.field1" onclick="calcSum(this)" value="1"></td>
+                    <td class="score-button" data-score="2" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num23" ng-model="form.field2" onclick="calcSum(this)" value="2"></td>
+                    <td class="score-button" data-score="3" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num23" ng-model="form.field3" onclick="calcSum(this)" value="3"></td>
+                    <td class="score-button" data-score="4" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num23" ng-model="form-field4" onclick="calcSum(this)" value="4"></td>
+                    <td class="score-button" data-score="5" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num23" ng-model="form-field5" onclick="calcSum(this)" value="5"></td>
+                    <td class="score-button " data-score="6" style="background-color: rgb(212, 167, 241); text-align: center"> <input type="radio" name="num23" ng-model="form-field6" onclick="calcSum(this)" value="6"></td>
+                    <td class="score-button " data-score="7" style="background-color: rgb(212, 167, 241); text-align: center; border-top-right-radius: 30px; border-bottom-right-radius: 30px"> <input type="radio" name="num23" ng-model="form-field7" onclick="calcSum(this)" value="7"></td>
+                </tr>
+            </tbody>
+
+</form>
+            <tfoot>
+                
+                    <div class="form-group">
+                        <label>Any Preferred School:</label>
+                        <select class="form-control" name="school">
+   
+                          <option value="">Please select the university:</option>
+                          <option value="HKBU">Hong Kong Baptist University</option>
+                          <option value="CityU">City University of Hong Kong</option>
+                          <option value="HKU">Hong Kong University</option>
+                          <option value="CUHK">The Chinese University of Hong Kong</option>
+                          <option value="PolyU">The Hong Kong Polytechnic University</option>
+                          <option value="HKUST">The Hong Kong University of Science and Technology</option>
+                          <option value="LingU">Lingnan University</option>
+                          <option value="EduU">The Education University of Hong Kong</option>
+                          <option value="OUHK">The Open University of Hong Kong</option>
+                           </select>
+                        </div>
+
+                <tr class="result">
+                    <td class="subject-name"></td>
+                    <td class="result" colspan="7">
+                        <span id="my-score"></span> 
+                        <p></p>
+                        <span>Your Input Score Result :  </span>
+                        <input type="text" name="sum" required />
+                        <input type="submit" value="Send" />
+                        <span></span>
+                        <p></p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script>
+        var sum = 0;
+        async function calcSum(oFormElement) {
+            sum = 0;
+            Array.from(document.querySelectorAll('input[type="radio"]')).forEach(node => {
+                if (node.checked) {
+                    sum += parseInt(node.value)
+                    document.getElementsByName('sum')[0].value = sum;
+                }
+            })            
+        }
+    </script>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+    

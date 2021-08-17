@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-12">
+
+            <table class="table">
+                <thead>
+                    <th class="code">Code</th>
+                    <th class="school">School </th>
+                    <th class="progname">Programme Name</th>
+                    <th class="scoreform">Score Formula</th>
+                    <th class="meanscore">Median</th>
+                </thead>
+
+                <% wish.forEach(function(wish) { %>
+                <tr>
+                    <td><%= wish.code %></td>
+                    <td><%= wish.school %></td>
+                    <td><%= wish.progname %></td>
+                    <td><%= wish.scoreform %></td>
+                    <td><%= wish.meanscore %></td>
+                    <td><a class="btn btn-outline-info my-2 my-sm-0" href="/user/delete/<%=wish.code%>">Delete</a></td>
+                </tr>
+                <% }); %>
+            </table>
+        </div>
+    </div> 
+</div>

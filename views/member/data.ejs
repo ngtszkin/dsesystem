@@ -1,0 +1,267 @@
+<form action="/member/profile" method="POST">
+    <div class="page-caption">
+        <div style="position: relative;"></div>
+        <style>
+            .box {
+                width: 100%;
+                height: 300px;
+                border: 5px dashed #f7a239;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="card">
+                <div class="card-body">
+                  <h4 style="text-align: center; font-weight: bold; text-align: center">* Click "Save" after you click the checkbox(es) of interested programme(s) to add in Wish List. *</h4>
+                  <h5 style="text-align: center"># The bracket in score formula is the weighting of specific subjects #</h5>
+                </div>
+              </div>
+<p></p>
+
+           <p style="font-weight: bold; text-align:center"><span style="font-size: xx-large">Your Marks: 
+            <%=member %>
+        </span></p>
+
+    
+            <div>
+                <button type="submit" value="Save" class="btn-block btn-danger">Save</button>
+                <table class="table">
+                    <thead>
+                        <th class="code">Code</th>
+                        <th class="school">School </th>
+                        <th class="progname">Programme Name</th>
+                        <th class="scoreform" style="white-space: nowrap">#Score Formula</th>
+                        <th class="meanscore">Median</th>
+                        <th class="wishlist" style="white-space: nowrap">*Wish List</th>
+                    </thead>
+
+                    <% member1.forEach(function(m) { %>
+                    <tr>
+                        <td><%= m.code %></td>
+                        <td><%= m.school %></td>
+                        <td><button><a href="/member/info?code=<%= m.code%>&school="><%= m.progname %></a></button></td>
+                        <td><%= m.scoreform %></td>
+                        <td><%= m.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=m.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member2.forEach(function(k) { %>
+                    <tr>
+                        <td><%= k.code %></td>
+                        <td><%= k.school %></td>
+                        <td><button><a href="/member/info?code=<%= k.code%>&school="><%= k.progname %></a></button></td>
+                        <td><%= k.scoreform %></td>
+                        <td><%= k.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=k.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member3.forEach(function(a) { %>
+                    <tr>
+                        <td><%= a.code %></td>
+                        <td><%= a.school %></td>
+                        <td><button><a href="/member/info?code=<%= a.code%>&school="><%= a.progname %></a></button></td>
+                        <td><%= a.scoreform %></td>
+                        <td><%= a.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=a.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member4.forEach(function(b) { %>
+                    <tr>
+                        <td><%= b.code %></td>
+                        <td><%= b.school %></td>
+                        <td><button><a href="/member/info?code=<%= b.code%>&school="><%= b.progname %></a></button></td>
+                        <td><%= b.scoreform %></td>
+                        <td><%= b.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=b.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member5.forEach(function(c) { %>
+                    <tr>
+                        <td><%= c.code %></td>
+                        <td><%= c.school %></td>
+                        <td><button><a href="/member/info?code=<%= c.code%>&school="><%= c.progname %></a></button></td>
+                        <td><%= c.scoreform %></td>
+                        <td><%= c.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=c.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member6.forEach(function(d) { %>
+                    <tr>
+                        <td><%= d.code %></td>
+                        <td><%= d.school %></td>
+                        <td><button><a href="/member/info?code=<%= d.code%>&school="><%= d.progname %></a></button></td>
+                        <td><%= d.scoreform %></td>
+                        <td><%= d.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=d.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member7.forEach(function(e) { %>
+                    <tr>
+                        <td><%= e.code %></td>
+                        <td><%= e.school %></td>
+                        <td><button><a href="/member/info?code=<%= e.code%>&school="><%= e.progname %></a></button></td>
+                        <td><%= e.scoreform %></td>
+                        <td><%= e.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=e.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member8.forEach(function(f) { %>
+                    <tr>
+                        <td><%= f.code %></td>
+                        <td><%= f.school %></td>
+                        <td><button><a href="/member/info?code=<%= f.code%>&school="><%= f.progname %></a></button></td>
+                        <td><%= f.scoreform %></td>
+                        <td><%= f.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=f.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member9.forEach(function(g) { %>
+                    <tr>
+                        <td><%= g.code %></td>
+                        <td><%= g.school %></td>
+                        <td><button><a href="/member/info?code=<%= g.code%>&school="><%= g.progname %></a></button></td>
+                        <td><%= g.scoreform %></td>
+                        <td><%= g.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=g.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member10.forEach(function(h) { %>
+                    <tr>
+                        <td><%= h.code %></td>
+                        <td><%= h.school %></td>
+                        <td><button><a href="/member/info?code=<%= h.code%>&school="><%= h.progname %></a></button></td>
+                        <td><%= h.scoreform %></td>
+                        <td><%= h.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=h.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member11.forEach(function(i) { %>
+                    <tr>
+                        <td><%= i.code %></td>
+                        <td><%= i.school %></td>
+                        <td><button><a href="/member/info?code=<%= i.code%>&school="><%= i.progname %></a></button></td>
+                        <td><%= i.scoreform %></td>
+                        <td><%= i.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=i.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member12.forEach(function(j) { %>
+                    <tr>
+                        <td><%= j.code %></td>
+                        <td><%= j.school %></td>
+                        <td><button><a href="/member/info?code=<%= j.code%>&school="><%= j.progname %></a></button></td>
+                        <td><%= j.scoreform %></td>
+                        <td><%= j.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=j.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member13.forEach(function(n) { %>
+                    <tr>
+                        <td><%= n.code %></td>
+                        <td><%= n.school %></td>
+                        <td><button><a href="/member/info?code=<%= n.code%>&school="><%= n.progname %></a></button></td>
+                        <td><%= n.scoreform %></td>
+                        <td><%= n.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=n.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member14.forEach(function(o) { %>
+                    <tr>
+                        <td><%= o.code %></td>
+                        <td><%= o.school %></td>
+                        <td><button><a href="/member/info?code=<%= o.code%>&school="><%= o.progname %></a></button></td>
+                        <td><%= o.scoreform %></td>
+                        <td><%= o.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=o.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member15.forEach(function(p) { %>
+                    <tr>
+                        <td><%= p.code %></td>
+                        <td><%= p.school %></td>
+                        <td><button><a href="/member/info?code=<%= p.code%>&school="><%= p.progname %></a></button></td>
+                        <td><%= p.scoreform %></td>
+                        <td><%= p.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=p.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member16.forEach(function(q) { %>
+                    <tr>
+                        <td><%= q.code %></td>
+                        <td><%= q.school %></td>
+                        <td><button><a href="/member/info?code=<%= q.code%>&school="><%= q.progname %></a></button></td>
+                        <td><%= q.scoreform %></td>
+                        <td><%= q.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=q.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member17.forEach(function(r) { %>
+                    <tr>
+                        <td><%= r.code %></td>
+                        <td><%= r.school %></td>
+                        <td><button><a href="/member/info?code=<%= r.code%>&school="><%= r.progname %></a></button></td>
+                        <td><%= r.scoreform %></td>
+                        <td><%= r.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=r.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member18.forEach(function(s) { %>
+                    <tr>
+                        <td><%= s.code %></td>
+                        <td><%= s.school %></td>
+                        <td><button><a href="/member/info?code=<%= s.code%>&school="><%= s.progname %></a></button></td>
+                        <td><%= s.scoreform %></td>
+                        <td><%= s.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=s.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member19.forEach(function(t) { %>
+                    <tr>
+                        <td><%= t.code %></td>
+                        <td><%= t.school %></td>
+                        <td><button><a href="/member/info?code=<%= t.code%>&school="><%= t.progname %></a></button></td>
+                        <td><%= t.scoreform %></td>
+                        <td><%= t.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=t.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                    <% member20.forEach(function(u) { %>
+                    <tr>
+                        <td><%= u.code %></td>
+                        <td><%= u.school %></td>
+                        <td><button><a href="/member/info?code=<%= u.code%>&school="><%= u.progname %></a></button></td>
+                        <td><%= u.scoreform %></td>
+                        <td><%= u.meanscore %></td>
+                        <td style="text-align: center"><input type="checkbox" name="code" value="<%=u.code %>"></td>
+                    </tr>
+                    <% }); %>
+
+                </table>
+            </div>
+    </div>
+</form>

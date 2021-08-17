@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-12">
+
+            <table class="table">
+                <thead>
+                    <th class="code">Username</th>
+                    <th class="school">Nickname </th>
+                    <th class="email">Email</th>
+                    <th class="delete">Delete</th>
+                </thead>
+
+                <% person.forEach(function(life) { %>
+                <tr>
+                    <td><%= life.username %></td>  
+                    <td><%= life.nickname %></td>
+                    <td><%= life.email %></td>   
+
+                    <% if (life.username != 'admin'){ %>
+                    <td><a class="btn btn-outline-info my-2 my-sm-0" href="/user/administrator/<%=life.username%>">Delete</a></td>
+                    <% } %>
+                </tr>
+                <% }); %>
+            </table>
+        </div>
+    </div>
+    <p></p>
+</div>

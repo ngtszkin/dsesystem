@@ -1,0 +1,152 @@
+<div class="container">
+    <div class="row">
+
+        <p class="card-text"><% past.forEach(function(past) { %>
+            <div class="col-sm">
+
+                <div class="input-group mb-3">
+
+
+                    <div class="card text-white bg-primary mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <td>Chinese Language: <%= past.num1 %></td>
+                        </div>
+
+                        <div class="card-body">
+                            <td>English Language: <%= past.num2 %></td>
+                        </div>
+
+                        <div class="card-body">
+                            <td>Mathematics: <%= past.num3 %></td>
+                        </div>
+
+
+                        <div class="card-body">
+                            <td>Liberal Studies: <%= past.num4 %></td>
+                        </div>
+
+                        <% if(past.num5) { %>
+                        <div class="card-body">
+                            <td>M1: <%= past.num5 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num6) { %>
+                        <div class="card-body">
+                            <td>M2: <%= past.num6 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num7) { %>
+                        <div class="card-body">
+                            <td>Chinese Liturture: <%= past.num7 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num8) { %>
+                        <div class="card-body">
+                            <td>English Liturture: <%= past.num8 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num9) { %>
+                        <div class="card-body">
+                            <td>Chinese History: <%= past.num9 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num10) { %>
+                        <div class="card-body">
+                            <td>History: <%= past.num10 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num11) { %>
+                        <div class="card-body">
+                            <td>Religious: <%= past.num11 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num12) { %>
+                        <div class="card-body">
+                            <td>Geography: <%= past.num12 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num13) { %>
+                        <div class="card-body">
+                            <td>Economics: <%= past.num13 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num14) { %>
+                        <div class="card-body">
+                            <td>Tourism and Hospitality: <%= past.num14 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num15) { %>
+                        <div class="card-body">
+                            <td>Biology: <%= past.num15 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num16) { %>
+                        <div class="card-body">
+                            <td>Chemistry: <%= past.num16 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num17) { %>
+                        <div class="card-body">
+                            <td>Physics: <%= past.num17 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num18) { %>
+                        <div class="card-body">
+                            <td>Combined Science: <%= past.num18 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num19) { %>
+                        <div class="card-body">
+                            <td>BAFs: <%= past.num19 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num20) { %>
+                        <div class="card-body">
+                            <td>ICT: <%= past.num20 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num21) { %>
+                        <div class="card-body">
+                            <td>Music: <%= past.num21 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num22) { %>
+                        <div class="card-body">
+                            <td>Visual Arts: <%= past.num22 %></td>
+                        </div>
+                        <% } %>
+
+                        <% if(past.num23) { %>
+                        <div class="card-body">
+                            <td>Physical Education: <%= past.num23 %></td>
+                        </div>
+                        <% } %>
+
+                        <div class="card-body">
+
+                        <td>Sum of Score: <%= past.sum %></td>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </p>
+    </div>
+</div> 

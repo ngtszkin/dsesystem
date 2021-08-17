@@ -1,0 +1,37 @@
+<form action="/member/profile" method="POST">
+
+<div class="row">
+    <div class="card col-12">
+        <div class="card">
+            <div class="card-body">
+              <h4 style="text-align: center; font-weight: bold">* Click "Save" after you click the checkbox(es) of interested programme(s) to add in Wish List. *</h4>
+              <h5 style="text-align: center"># The bracket in score formula is the weighting of specific subjects #</h5>
+            </div>
+          </div>
+        <button type="submit" value="Save" class="btn-block btn-danger">Save</button>
+    
+                <table class="table">
+                    <thead>
+                        <th class = "code">Code</th>
+                        <th class = "school">School </th>
+                        <th class = "progname">Programme Name</th>
+                        <th class = "scoreform" style="white-space: nowrap">#Score Formula</th>
+                        <th class = "meanscore">Median</th>
+                        <th class = "wishlist" style="white-space: nowrap">*Wish List</th>
+                    </thead>
+
+                    <% member.forEach(function(member) { %>
+                        <tr>
+                            <td><%= member.code %></td>
+                            <td><%= member.school %></td>
+                            <td><button><a href="/member/info?code=<%= member.code%>&school="><%= member.progname %></a></button></td>
+                            <td><%= member.scoreform %></td>
+                            <td><%= member.meanscore %></td>
+                            <td style="text-align: center"><input type="checkbox" name="code" value="<%=member.code %>"></td>
+                        </tr>
+                    <% }); %>
+                    
+                </table>
+            </div>
+        </div>
+</form>
